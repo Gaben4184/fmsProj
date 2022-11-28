@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(20,200,500);
   
   let mil = millis()/1000;
   let TIME = 25;
