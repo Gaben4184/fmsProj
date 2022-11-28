@@ -5,10 +5,10 @@ function setup() {
 function draw() {
   background(220);
   
-  let circX = mouseX;
-  let circY = mouseY;
-  let mil = millis();
-  timelimit = 25;
+  let mil = millis()/1000;
+  let TIME = 25;
+  let timer = TIME;
+  let over = TIME;
   
   //wall variables
   i1= createDiv("");
@@ -36,18 +36,18 @@ function draw() {
   i5.position(450,240);
   i5.size(130,450);
   
-  i6.position(450,240);
-  i6.size(450,70);
+  i6.position(695,410);
+  i6.size(350,110);
   
   c.position(970,540);
   c.size(50,80);
   
-  i1.mouseOver(tryagain);
-  i2.mouseOver(tryagain);
-  i3.mouseOver(tryagain);
-  i4.mouseOver(tryagain);
-  i5.mouseOver(tryagain);
-  i6.mouseOver(tryagain);
+  i1.mouseOver(buton);
+  i2.mouseOver(buton);
+  i3.mouseOver(buton);
+  i4.mouseOver(buton);
+  i5.mouseOver(buton);
+  i6.mouseOver(buton);
   
   c.mouseOver(goodjob);
   
@@ -76,27 +76,31 @@ function draw() {
   i3.size(800,80);
   
   fill(150,150,150);
-  rect(510,240,70,450);
-  i4.position(510,240);
+  rect(500,240,70,450);
+  i4.position(500,240);
   i4.size(70,450);
   
   fill(180,180,180);
-  rect(450,240,450,70);
+  rect(460,240,450,70);
   i5.position(450,240);
-  i5.size(450,240);
+  i5.size(450,50);
   
   fill(210,210,210);
-  rect(695,410,350,110);
+  rect(710,410,350,110);
+  i6.position(710,410);
+  i6.size(350,110);
   
 //starting point
+  fill(255,264,223);
+  rect(450,130,130,110);
+  
+  
  
  //wall
   
   fill(20,140,140);
   rect(580,220,320,20);
 
-
-  
   //vertical walls
   
   fill(20,140,140);
@@ -151,38 +155,73 @@ function draw() {
   c.size(50,80);
   
   //mouse
-  fill(255,20,30);
-  mouse = ellipse(circX,circY,50,50);
+  
+  //tryagain
+
+function res(){
+    location.reload();
+}
   
   //timer
-    totaltime = int(mil/1000);
+      if (mil <= TIME){
+        fill(0);
+        textSize(24);
+        text(`Timer: ${round(timer - mil)}`, 30, 30);
+    }
+    if (mil > TIME){
+        over = 0;
+    }
+    if (over <= 0) {
+        fill(0);
+        textSize(24);
+        text(`Timer: 0`, 1450, 30);
+        fill(220);
+        rect(200, 70, 1200, 800);
+        fill(0);
+        text("Restart?", 750, 450);
+        button = createButton('Restart');
+        button.position(450, 130);
+        button.size(130, 110);
+        button.mousePressed(res);
+    }
   
-    gametime = timelimit-totaltime;
+  function buton(){
+        fill(0);
+        rect(200,70, 1200, 800);
+        fill(0);
+        text("Restart?", 750, 450);
+        button = createButton('Restart');
+        button.position(450, 130);
+        button.size(130, 110);
+        button.mousePressed(res); 
+    
+  }
   
-     fill(255);
-     stroke(0);
-     textSize(24);
-     text('Timer:'+gametime ,130,30);
      
    
 ///conclusionofgame
   
-  d = int(dist(circX, circY, 330, 300));
-  
-//tryagain
-
-function tryagain(){
-  fill(255);
-  stroke(0);
-  textSize(54);
-  text('Haha Loser!',1000,80);
-}
   
 function goodjob(){
   fill(255);
-  stroke(0);
-  textSize(54);
-  text('LESGOOOOO',1000,80);
+  rect(200,100,1200,700);
+  fill(0);
+  text("GOOD JOB AHAHAH!!",750,450);
+  
+  button3 = createButton('Restart');
+  button3.position(300,130);
+  button3.size(130,110);
+  button3.mousePressed(res);
+  
+  button4 = createButton('Menu');
+  button4.position(600,130);
+  button4.size(130,110);
+  button4.mousePressed(menu);
+  
+}
+  
+function menu(){
+  
 }
   
   
