@@ -13,11 +13,11 @@ function draw() {
     noFill(220);
   }
   noStroke();
-  ellipse(circX, circY, 50, 50);
+  ellipse(circX, circY, 300, 300);
   
   
   
-  button = createButton("Once you color in all 7 circles, click here to restart");
+  button = createButton("Once you color in everything, click here to restart");
   button.position(150, 1);
   button.size(150, 100);
   button.mousePressed(res);
