@@ -14,16 +14,16 @@ function draw() {
   let circY = mouseY;
 
   if (mouseIsPressed == true) {
-    fill(123, 63, 0);
+    fill(0, 0, 0);
   } else {
     noFill(220);
   }
   noStroke();
-  ellipse(circX, circY, 175, 175);
+  ellipse(circX, circY, 50, 50);
   
   
   
-  button = createButton("Once you color in all 7 circles, click here to restart");
+  button = createButton("Once you finishing drawing, click here to restart");
   button.position(150, 1);
   button.size(150, 100);
   button.mousePressed(res);
