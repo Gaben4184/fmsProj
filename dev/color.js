@@ -19,35 +19,16 @@ function draw() {
     noFill(220);
   }
   noStroke();
-  ellipse(circX, circY, 50, 50);
+  ellipse(circX, circY, 175, 175);
   
   
   
-  
-  if (mil <= TIME) {
-    fill(0);
-    textSize(24);
-    text(`Timer: ${round(timer - mil)}`, 1450, 30);
-}
-if (mil > TIME) {
-    over = 0;
-}
-if (over <= 0) {
-    fill(0);
-    textSize(24);
-    text(`Timer: 0`, 1450, 30);
-    fill(220);
-    rect(200, 100, 1200, 700);
-    fill(0);
-    textSize(24);
-    text(`Points: ${points}`, 750, 300);
-    text("Restart?", 750, 450);
-    button = createButton("Once you color in all 7 circles, click here to restart");
-    button.position(700, 400);
-    button.size(200, 100);
-    button.mousePressed(res);
+  button = createButton("Once you color in all 7 circles, click here to restart");
+  button.position(150, 1);
+  button.size(150, 100);
+  button.mousePressed(res);
 
-}
+
 
   fill(0);
   
