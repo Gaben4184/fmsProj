@@ -44,7 +44,9 @@ function draw() {
     rect(570, 595, 17, 175);
     rect(913, 595, 17, 175);
 
+    fill(0);
     text(`Points: ${points}`, 1325, 30);
+    text("Stack coins on table", 650, 200);
 
     //move coin
     if (

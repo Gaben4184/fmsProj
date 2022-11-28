@@ -41,7 +41,7 @@ function draw() {
   circle(1000, 380, 150);
 
   button = createButton("If you find all 7 circles, click here to restart");
-  button.position(1, 1);
+  button.position(150, 1);
   button.size(150, 100);
   button.mousePressed(res);
 

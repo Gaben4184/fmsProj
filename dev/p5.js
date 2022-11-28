@@ -166,7 +166,7 @@ function res(){
       if (mil <= TIME){
         fill(0);
         textSize(24);
-        text(`Timer: ${round(timer - mil)}`, 30, 30);
+        text(`Timer: ${round(timer - mil)}`, 1325, 30);
     }
     if (mil > TIME){
         over = 0;
@@ -208,10 +208,10 @@ function goodjob(){
   fill(0);
   text("GOOD JOB AHAHAH!!",750,450);
   
-  button3 = createButton('Restart');
-  button3.position(300,130);
-  button3.size(130,110);
-  button3.mousePressed(res);
+  // button3 = createButton('Restart');
+  // button3.position(300,130);
+  // button3.size(130,110);
+  // button3.mousePressed(res);
   
   button4 = createButton('Menu');
   button4.position(300,430);
@@ -221,7 +221,7 @@ function goodjob(){
 }
   
 function menu(){
-  
+  location.assign("fmsProject.html");
 }
   
   
