@@ -82,6 +82,8 @@ function draw() {
         fill(220);
         rect(200, 100, 1200, 700);
         fill(0);
+        textSize(24);
+        text(`Points: ${points}`, 750, 300);
         text("Restart?", 750, 450);
         button = createButton('Restart');
         button.position(700, 400);

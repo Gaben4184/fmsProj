@@ -15,6 +15,8 @@ function draw() {
   noStroke();
   ellipse(circX, circY, 50, 50);
   
+  
+  
   button = createButton("Once you color in all 7 circles, click here to restart");
   button.position(150, 1);
   button.size(150, 100);
@@ -25,31 +27,31 @@ function draw() {
 function res() {
   location.reload();
 }
-  noStroke();
-  fill(255);
-  circle(50, 400, 80);
+  // noStroke();
+  // fill(255);
+  // circle(50, 400, 80);
 
-  noStroke();
-  fill(220);
-  Circle(1555, 100, 90);
+  // noStroke();
+  // fill(220);
+  // Circle(1555, 100, 90);
 
-  noStroke();
-  fill(255);
-  circle(350, 480, 90);
+  // noStroke();
+  // fill(255);
+  // circle(350, 480, 90);
 
-  noStroke();
-  fill(255);
-  circle(700, 800, 150);
+  // noStroke();
+  // fill(255);
+  // circle(700, 800, 150);
 
-  noStroke();
-  fill(255);
-  circle(800, 600, 50);
+  // noStroke();
+  // fill(255);
+  // circle(800, 600, 50);
 
-  noStroke();
-  fill(255);
-  circle(1300, 380, 100);
+  // noStroke();
+  // fill(255);
+  // circle(1300, 380, 100);
 
-  noStroke();
-  fill(255);
-  circle(1000, 380, 150);
+  // noStroke();
+  // fill(255);
+  // circle(1000, 380, 150);
 }
