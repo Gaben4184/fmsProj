@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
   
-  if(mouseIsPressed) {
+  if(mouseIsPressed == true) {
     fill(123,63,0);
   }
   else{
