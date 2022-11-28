@@ -214,7 +214,7 @@ function goodjob(){
   button3.mousePressed(res);
   
   button4 = createButton('Menu');
-  button4.position(600,130);
+  button4.position(300,430);
   button4.size(130,110);
   button4.mousePressed(menu);
   
