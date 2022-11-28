@@ -155,6 +155,7 @@ function draw() {
   c.size(50,80);
   
   //mouse
+  mouse = ellipse(mouseX,mouseY,30)
   
   //tryagain
 
