@@ -51,6 +51,10 @@ function draw() {
   
   c.mouseOver(goodjob);
   
+  //map
+  fill(300,600,200);
+  rect(300,60,950,700)
+  
   
   
   //horizontal walls pt1
@@ -59,39 +63,27 @@ function draw() {
   rect(580,130,420,20);
   
   //placeholderbarriers
-  
-  fill(30,30,30);
-  rect(580,80,440,50);
+
   i1.position(580,80);
   i1.size(440,50);
   
-  fill(90,90,90);
-  rect(1020,80,50,700);
   i2.position(1020,80);
   i2.size(50,700);
   
-  fill(120,120,120);
-  rect(450,640,800,80);
   i3.position(450,640);
   i3.size(800,80);
   
-  fill(150,150,150);
-  rect(500,240,70,450);
   i4.position(500,240);
   i4.size(70,450);
   
-  fill(180,180,180);
-  rect(460,240,450,70);
   i5.position(450,240);
   i5.size(450,50);
   
-  fill(210,210,210);
-  rect(710,410,350,110);
   i6.position(710,410);
   i6.size(350,110);
   
 //starting point
-  fill(255,264,223);
+  fill(255,200,23);
   rect(450,130,130,110);
   
   
@@ -149,7 +141,7 @@ function draw() {
   
   
   //finish line
-  fill(200,140,170);
+  fill(200,0,0);
   rect(970,540,50,80);
   c.position(970,540);
   c.size(50,80);
