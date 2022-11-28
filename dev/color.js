@@ -9,15 +9,16 @@ function draw() {
   if (mouseIsPressed == true) {
     fill(123, 63, 0);
   } else {
-    noFill(220);
+    fill(255);
   }
+  noStroke();
   ellipse(circX, circY, 120, 120);
+
   noStroke();
   fill(220);
   circle(50, 400, 80);
 
-  noStroke();
-  fill(220);
+
   circle(1555, 100, 30);
 
   noStroke();
@@ -39,17 +40,14 @@ function draw() {
   noStroke();
   fill(220);
   circle(1000, 380, 150);
+  fill(0);
 
   button = createButton("If you find all 7 circles, click here to restart");
   button.position(150, 1);
   button.size(150, 100);
   button.mousePressed(res);
+}
 
-  fill(0);
-  
 function res() {
   location.reload();
 }
-
-}
-
