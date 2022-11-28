@@ -13,7 +13,7 @@ function draw() {
     noFill(220);
   }
   noStroke();
-  ellipse(circX, circY, 300, 300);
+  ellipse(circX, circY, 175, 175);
   
   
   
