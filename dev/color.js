@@ -1,9 +1,11 @@
 function setup() {
   createCanvas(1600, 900);
-  background(220);
 }
 
 function draw() {
+  
+  let circX = mouseX;
+  let circY = mouseY;
   
   if(mouseIsPressed == true) {
     fill(123,63,0);
@@ -11,7 +13,7 @@ function draw() {
   else{
     noFill(220);
   }
-  ellipse(mouseX,mouseY,120,120);
+  ellipse(circX,circY,120,120);
   noStroke();
   fill(220);
 circle(50,400,80);
