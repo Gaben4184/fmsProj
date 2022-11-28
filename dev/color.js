@@ -14,7 +14,7 @@ function draw() {
   let circY = mouseY;
 
   if (mouseIsPressed == true) {
-    fill(0, 0, 0);
+    fill(0, 0, 255);
   } else {
     noFill(220);
   }
